@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar /home/ec2-user/build/libs/Bugor-1.0-SNAPSHOT.jar
+nohup java -jar /home/ec2-user/build/libs/Bugor-1.0-SNAPSHOT.jar > /dev/null 2>&1 &
