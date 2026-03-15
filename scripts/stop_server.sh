@@ -1,2 +1,2 @@
 #!/bin/bash
-pkill -f 'Bugor-1.0-SNAPSHOT.jar'
+sudo fuser -k 8080/tcp
