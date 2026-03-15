@@ -4,12 +4,8 @@ files:
   - source: /
     destination: /home/ec2-user
 hooks:
-  ApplicationStop:
-    - location: scripts/stop_server.sh
-      timeout: 300
-      runas: root
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: scripts/stop_server.sh
       timeout: 300
       runas: root
   AfterInstall:
